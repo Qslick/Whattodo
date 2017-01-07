@@ -1,0 +1,45 @@
+ActionBar {
+}
+
+.title {
+    margin-top: 40px
+}
+
+.time_btn {
+    margin-left: 90px;
+    padding-right: 20px;
+    border-radius: 20;
+    /*background-color: lightblue;*/
+    color: yellowgreen;
+
+}
+
+.priority_left {
+    margin-left: 20%;
+}
+
+.priority_right {
+    margin-right: 20%;
+}
+
+.priority {
+    margin-right: 20;
+    margin-left: 20;
+}
+
+.btn_finish {
+    margin-top: 80%;
+}
+
+.doneBtn {
+    margin-top: 60%;
+}
+
+.day_btn {
+    width: 50;
+    background-color: #FF1981;
+    border-radius: 50;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

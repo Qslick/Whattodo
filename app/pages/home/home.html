@@ -1,0 +1,38 @@
+<ActionBar class="action-bar" title="Home">
+    <ActionItem *ngIf="devMode" (tap)="devTest()" android.systemIcon="ic_menu_settings_holo_light" android.position="right"></ActionItem>
+    <ActionItem *ngIf="devMode" (tap)="devGenerateEvents()" android.systemIcon="ic_menu_add" android.position="right"></ActionItem>
+    <ActionItem *ngIf="devMode" (tap)="devDeleteList()" android.systemIcon="ic_menu_clear_playlist" android.position="right"></ActionItem>
+
+</ActionBar>
+
+   <StackLayout>     
+      <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
+           <grid-layout rows="200, auto, auto" columns="auto, auto, *">
+               <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
+               <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
+               <button text="DECLINE" tap="goAway" row="2" col="0" />
+               <button text="ACCEPT" row="2" col="1" />
+           </grid-layout>
+       </Card:CardView>
+   </StackLayout>
+
+<StackLayout>
+    <Label *ngIf="hasEvent == false" class="top-text label " text="Hmm... Looks kinda empty"></Label>
+    <Label *ngIf="hasEvent == false" text="Try adding an event :)"></Label>
+
+    <ListView [items]="eventList" (itemTap)="eventListTap($event)" class="list-group">
+        <template let-item="item" let-odd="odd" let-even="even">
+            <GridLayout columns="auto, auto, *" rows="auto, auto, *">
+                <Label col="0" row="0" [text]="item.getTitle()" class="list-group-item"></Label>
+                <Label col="0" row="1" [text]="item.getDescription()"></Label>
+                <Label col="0" row="2" text="time"></Label>
+                <Label col="1" row="2" text="!!"></Label>
+
+
+            </GridLayout>
+        </template>
+    </ListView>
+
+
+    <Button class="btn btn-primary add-btn" text="Add Event" (tap)="addEventBtn()" [nsRouterLink]="['/event']" pageTransition="fade"></Button>
+</StackLayout>

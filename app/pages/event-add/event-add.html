@@ -1,0 +1,72 @@
+<ActionBar class="action-bar" title="Event">
+
+    <NavigationButton [nsRouterLink]="['/home']" pageTransition="fade"></NavigationButton>
+        <ActionItem (tap)="testBtn" android.systemIcon="ic_menu_settings_holo_light" android.position="right">
+
+    </ActionItem>
+
+    <!--<NavigationButton android.systemIcon="ic_menu_close_clear_cancel" [nsRouterLink]="['/home']" pageTransition="fade"></NavigationButton>
+    <ActionItem android.systemIcon="ic_menu_moreoverflow_normal_holo_light" android.position="right"></ActionItem>-->
+
+</ActionBar>
+
+<StackLayout>
+    <TabView>
+        <StackLayout *tabItem="{title: 'Detail', iconSource: '~/icon.png'}">
+            <StackLayout class="form title_header">
+                <StackLayout class="input-field">
+                    <Label class="title h4" text="Title"></Label>
+                    <TextField class="h2" hint="Enter Name" autoCapitalizationType="true" [(ngModel)]='title'></TextField>
+                </StackLayout>
+                <StackLayout class="input-field">
+                    <TextField class="h3" hint="Description" autoCapitalizationType="true" [(ngModel)]='description'></TextField>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout orientation="horizontal">
+                <Button class="btn-primary btn-rounded-sm priority priority_left" text="!" (tap)="priority1()"></Button>
+                <Button class="btn-primary btn-rounded-sm priority" text="!!" (tap)="priority2()"></Button>
+                <Button class="btn-primary btn-rounded-sm priority priority_right" text="!!!" (tap)="priority3()"></Button>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Time'}">
+            <StackLayout>
+
+                <TimePicker [(ngModel)]="time"></TimePicker>
+
+                <StackLayout class="form">
+                    <StackLayout orientation="horizontal">
+                        <Label text="Start Time"></Label>
+                        <Button class="time_btn" text="{{timeStart}}" (tap)="startTimeBtn()"></Button>
+                    </StackLayout>
+
+                    <StackLayout orientation="horizontal">
+                        <Label text="End Time  "></Label>
+                        <Button class="time_btn" text="{{timeEnd}}" (tap)="endTimeBtn()"></Button>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Date'}">
+            <StackLayout orientation="horizontal">
+                <Button class="btn-active" text="M" (tap)="monday()"></Button>
+                <Button class="btn-active" text="T" (tap)="tuesday()"></Button>
+                <Button class="btn-active" text="W" (tap)="wednesday()"></Button>
+            </StackLayout>
+            <StackLayout orientation="horizontal">
+                <Button class="btn-active" text="TR" (tap)="thursday()"></Button>
+                <Button class="btn-active" text="F" (tap)="friday()"></Button>
+                <Button class="btn-active" text="S" (tap)="saturday()"></Button>
+            </StackLayout>
+            <StackLayout orientation="horizontal">
+                <Button class="btn-active" text="M" (tap)="sunday()"></Button>
+            </StackLayout>
+        </StackLayout>
+    </TabView>
+
+</StackLayout>
+
+<StackLayout>
+    <Button class="btn btn-primary btn_finish" text="Done" (tap)="doneBtn()"></Button>
+</StackLayout>
