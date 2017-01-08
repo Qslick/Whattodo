@@ -1,8 +1,12 @@
 "use strict";
 var core_1 = require('@angular/core');
 var event_handeler_provider_1 = require("../../shared/providers/event-handeler/event-handeler.provider");
+var page_1 = require('ui/page');
+var element_registry_1 = require('nativescript-angular/element-registry');
+element_registry_1.registerElement('Card', function () { return require('nativescript-cardview').CardView; });
 var HomeComponent = (function () {
-    function HomeComponent(eventHandeler) {
+    function HomeComponent(page, eventHandeler) {
+        this.page = page;
         this.eventHandeler = eventHandeler;
         this.hasEvent = false;
         this.eventList = [];
@@ -65,7 +69,7 @@ var HomeComponent = (function () {
             templateUrl: "./pages/home/home.html",
             styleUrls: ["pages/home/home.css"],
         }), 
-        __metadata('design:paramtypes', [event_handeler_provider_1.EventHandeler])
+        __metadata('design:paramtypes', [page_1.Page, event_handeler_provider_1.EventHandeler])
     ], HomeComponent);
     return HomeComponent;
 }());

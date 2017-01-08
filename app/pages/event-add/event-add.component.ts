@@ -4,12 +4,25 @@ import { Router } from "@angular/router";
 import { EventHandeler } from "../../shared/providers/event-handeler/event-handeler.provider";
 import { HomeComponent } from "../home/home.component";
 
+import { registerElement } from 'nativescript-angular/element-registry';
+registerElement('CheckBox', () => require('nativescript-checkbox').CheckBox);
+
 @Component({
     selector: 'my-app',
     templateUrl: "./pages/event-add/event-add.html",
     styleUrls: ["./pages/event-add/event-add.css"]
 })
 export class EventAddComponent implements OnInit {
+
+    checkBool: boolean = false;
+
+    mondayCheck: boolean;
+    tuesdayCheck: boolean = false;
+    wednesdayCheck: boolean = false;
+    thursdayCheck: boolean = false;
+    fridayCheck: boolean = false;
+    saturdayCheck: boolean = false;
+    sundayCheck: boolean = false;
 
     title: string = "Computer Science";
     description: string = "description I guess";
@@ -82,7 +95,16 @@ jasmine_doneBtn(){
 
 
     private monday() {
-
+        if(this.mondayCheck == true){
+            this.mondayCheck = false;
+            alert("Button tapped now: " + this.mondayCheck);
+        } else if(this.mondayCheck ==false){
+            this.mondayCheck = true;
+            alert("Button tapped now: " + this.mondayCheck);
+        } else {
+            this.mondayCheck = true;
+            alert(this.mondayCheck);
+        }
     }
 
     private tuesday() {

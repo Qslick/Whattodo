@@ -4,6 +4,10 @@ import { EventHandeler } from "../../shared/providers/event-handeler/event-hande
 import listViewModule = require("ui/list-view");
 import observableArray = require("data/observable-array");
 import labelModule = require("ui/label");
+import {Page} from 'ui/page';
+
+import { registerElement } from 'nativescript-angular/element-registry';
+registerElement('Card', () => require('nativescript-cardview').CardView);
 
 
 @Component({
@@ -19,9 +23,9 @@ export class HomeComponent implements OnInit {
   devMode: boolean = true;
 
 
-  constructor(private eventHandeler: EventHandeler) {
-
-  }
+  constructor(private page: Page, private eventHandeler: EventHandeler) {
+    
+}
 
   ngOnInit() {
     this.eventList = this.eventHandeler.eventList;

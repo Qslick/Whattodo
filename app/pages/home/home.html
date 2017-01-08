@@ -2,20 +2,25 @@
     <ActionItem *ngIf="devMode" (tap)="devTest()" android.systemIcon="ic_menu_settings_holo_light" android.position="right"></ActionItem>
     <ActionItem *ngIf="devMode" (tap)="devGenerateEvents()" android.systemIcon="ic_menu_add" android.position="right"></ActionItem>
     <ActionItem *ngIf="devMode" (tap)="devDeleteList()" android.systemIcon="ic_menu_clear_playlist" android.position="right"></ActionItem>
-
 </ActionBar>
 
-   <StackLayout>     
-      <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
-           <grid-layout rows="200, auto, auto" columns="auto, auto, *">
-               <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
-               <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
-               <button text="DECLINE" tap="goAway" row="2" col="0" />
-               <button text="ACCEPT" row="2" col="1" />
-           </grid-layout>
-       </Card:CardView>
-   </StackLayout>
+<StackLayout>
+    <CardView class="cardStyle" margin="10" elevation="40" radius="5">
+        <GridLayout rows="200, auto, auto" columns="auto, auto, *">
+            <Image src="http://nexceris.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg" stretch="aspectFill" colSpan="3" row="0"></Image>
+            <Label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3"></Label>
+            <Button text="DECLINE" tap="goAway" row="2" col="0"></Button>
+            <Button text="ACCEPT" row="2" col="1"></Button>
+        </GridLayout>
+    </CardView>
+</StackLayout>
 
+
+<!--<StackLayout>
+<Image src="https://www.google.com/images/errors/logo_sm_2.png" ></Image>
+</StackLayout>-->
+
+<!--
 <StackLayout>
     <Label *ngIf="hasEvent == false" class="top-text label " text="Hmm... Looks kinda empty"></Label>
     <Label *ngIf="hasEvent == false" text="Try adding an event :)"></Label>
@@ -27,12 +32,10 @@
                 <Label col="0" row="1" [text]="item.getDescription()"></Label>
                 <Label col="0" row="2" text="time"></Label>
                 <Label col="1" row="2" text="!!"></Label>
-
-
             </GridLayout>
         </template>
     </ListView>
 
 
     <Button class="btn btn-primary add-btn" text="Add Event" (tap)="addEventBtn()" [nsRouterLink]="['/event']" pageTransition="fade"></Button>
-</StackLayout>
+</StackLayout>-->

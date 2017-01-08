@@ -1,0 +1,42 @@
+<Page xmlns:Card="nativescript-cardview">
+
+    <ActionBar row="0" class="header" title="TCCTreino">
+        <ActionItem ios.position="right">
+            <Button class="actionbar-button" text="Settings"></Button>
+        </ActionItem>
+    </ActionBar>
+
+
+   <StackLayout>     
+   <!--<Label text="test" textWrap="true" ></Label>-->
+   
+      <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
+           <grid-layout rows="200, auto, auto" columns="auto, auto, *">
+               <image src="./images/img1.png" stretch="aspectFill" colSpan="3" row="0" />
+               <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
+               <button text="DECLINE" tap="goAway" row="2" col="0" />
+               <button text="ACCEPT" row="2" col="1" />
+           </grid-layout>
+       </Card:CardView>
+
+           <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
+           <grid-layout rows="200, auto, auto" columns="auto, auto, *">
+               <image src="./images/img1.png" stretch="aspectFill" colSpan="3" row="0" />
+               <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
+               <button text="DECLINE" tap="goAway" row="2" col="0" />
+               <button text="ACCEPT" row="2" col="1" />
+           </grid-layout>
+       </Card:CardView>
+
+           <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
+           <grid-layout rows="200, auto, auto" columns="auto, auto, *">
+               <image src="./images/img1.png" stretch="aspectFill" colSpan="3" row="0" />
+               <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
+               <button text="DECLINE" tap="goAway" row="2" col="0" />
+               <button text="ACCEPT" row="2" col="1" />
+           </grid-layout>
+       </Card:CardView>
+       
+   </StackLayout>
+
+</Page>

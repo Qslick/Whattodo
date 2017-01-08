@@ -1,12 +1,28 @@
-label {
+/*label {
     vertical-align: center;
     text-align: center;
-}
+}*/
+
+/*stackLayout{
+    margin: 15px;
+}*/
 
 .top-text {
     margin-top: 35%;
 }
 
+.cardStyle {
+    background-color: #3489db;
+    color: #68f442;
+}
+
+
+
 .add-btn {
     margin-top: 40%;
+}
+
+.cardStyle {
+    background-color: #3489db;
+    color: #fff;
 }

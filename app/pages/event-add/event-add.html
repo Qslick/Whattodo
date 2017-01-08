@@ -44,25 +44,28 @@
                         <Button class="time_btn" text="{{timeEnd}}" (tap)="endTimeBtn()"></Button>
                     </StackLayout>
 
+                    <StackLayout orientation="horizontal">
+
+                        <StackLayout>
+                        <CheckBox [checked]="mondayCheck" text="Monday" [fillColor]="myCheckColor" (tap)="monday()" ></CheckBox>
+                        <CheckBox [checked]="tuesdayCheck" text="Tuesday" [fillColor]="myCheckColor" (tap)="tuesday()" ></CheckBox>
+                        <CheckBox [checked]="wednesdayCheck" text="Wednesday" [fillColor]="myCheckColor" (tap)="wednesday()" ></CheckBox>
+                        </StackLayout>
+
+                        <StackLayout>
+                        <CheckBox [checked]="thursdayCheck" text="Thursday" [fillColor]="myCheckColor" (tap)="thursday()" ></CheckBox>
+                        <CheckBox [checked]="fridayCheck" text="Friday" fillColor="{{ myCheckColor }}" (tap)="friday()" ></CheckBox>
+                        <CheckBox [checked]="saturdayCheck" text="Saturday" fillColor="{{ myCheckColor }}" (tap)="saturday()" ></CheckBox>
+                        <CheckBox [checked]="sundayCheck" text="Sunday" fillColor="{{ myCheckColor }}" (tap)="sunday()" ></CheckBox>
+                    </StackLayout>
+
+                    </StackLayout>
+
                 </StackLayout>
 
             </StackLayout>
         </StackLayout>
-        <StackLayout *tabItem="{title: 'Date'}">
-            <StackLayout orientation="horizontal">
-                <Button class="btn-active" text="M" (tap)="monday()"></Button>
-                <Button class="btn-active" text="T" (tap)="tuesday()"></Button>
-                <Button class="btn-active" text="W" (tap)="wednesday()"></Button>
-            </StackLayout>
-            <StackLayout orientation="horizontal">
-                <Button class="btn-active" text="TR" (tap)="thursday()"></Button>
-                <Button class="btn-active" text="F" (tap)="friday()"></Button>
-                <Button class="btn-active" text="S" (tap)="saturday()"></Button>
-            </StackLayout>
-            <StackLayout orientation="horizontal">
-                <Button class="btn-active" text="M" (tap)="sunday()"></Button>
-            </StackLayout>
-        </StackLayout>
+
     </TabView>
 
 </StackLayout>

@@ -2,10 +2,19 @@
 var core_1 = require('@angular/core');
 var router_1 = require("@angular/router");
 var event_handeler_provider_1 = require("../../shared/providers/event-handeler/event-handeler.provider");
+var element_registry_1 = require('nativescript-angular/element-registry');
+element_registry_1.registerElement('CheckBox', function () { return require('nativescript-checkbox').CheckBox; });
 var EventAddComponent = (function () {
     function EventAddComponent(router, eventHandeler) {
         this.router = router;
         this.eventHandeler = eventHandeler;
+        this.checkBool = false;
+        this.tuesdayCheck = false;
+        this.wednesdayCheck = false;
+        this.thursdayCheck = false;
+        this.fridayCheck = false;
+        this.saturdayCheck = false;
+        this.sundayCheck = false;
         this.title = "Computer Science";
         this.description = "description I guess";
         this.priority = 2;
@@ -49,6 +58,18 @@ var EventAddComponent = (function () {
     EventAddComponent.prototype.priority3 = function () {
     };
     EventAddComponent.prototype.monday = function () {
+        if (this.mondayCheck == true) {
+            this.mondayCheck = false;
+            alert("Button tapped now: " + this.mondayCheck);
+        }
+        else if (this.mondayCheck == false) {
+            this.mondayCheck = true;
+            alert("Button tapped now: " + this.mondayCheck);
+        }
+        else {
+            this.mondayCheck = true;
+            alert(this.mondayCheck);
+        }
     };
     EventAddComponent.prototype.tuesday = function () {
     };
