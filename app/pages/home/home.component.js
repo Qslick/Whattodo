@@ -1,9 +1,11 @@
 "use strict";
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var event_handeler_provider_1 = require("../../shared/providers/event-handeler/event-handeler.provider");
 var page_1 = require('ui/page');
-var element_registry_1 = require('nativescript-angular/element-registry');
-element_registry_1.registerElement('Card', function () { return require('nativescript-cardview').CardView; });
+var element_registry_1 = require("nativescript-angular/element-registry");
+element_registry_1.registerElement("CardView", function () { return require("nativescript-cardview").CardView; });
+element_registry_1.registerElement("LineProgressBar", function () { return require("nativescript-progressbar").LineProgressBar; });
+element_registry_1.registerElement("fab", function () { return require("nativescript-floatingactionbutton").Fab; });
 var HomeComponent = (function () {
     function HomeComponent(page, eventHandeler) {
         this.page = page;
@@ -11,6 +13,7 @@ var HomeComponent = (function () {
         this.hasEvent = false;
         this.eventList = [];
         this.devMode = true;
+        this.progressValue = 30;
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.eventList = this.eventHandeler.eventList;
@@ -21,18 +24,12 @@ var HomeComponent = (function () {
             this.hasEvent = false;
         }
     };
-    HomeComponent.prototype.eventListTap = function (event) {
+    HomeComponent.prototype.eventListTap = function () {
         // alert("Event Tapped");
-        alert("event");
+        alert("Tapped");
     };
     HomeComponent.prototype.devTest = function () {
-        if (this.eventList.length > 0) {
-            alert("Item Array Length: " + this.eventList.length + "\n" +
-                this.eventList[this.eventList.length - 1].getTitle());
-        }
-        else {
-            alert("Empty List");
-        }
+        this.progressValue += (5);
     };
     HomeComponent.prototype.devDeleteList = function () {
         this.eventHandeler.deleteList();
@@ -46,7 +43,8 @@ var HomeComponent = (function () {
         } //end of for
         this.hasEvent = true;
     };
-    HomeComponent.prototype.addEventBtn = function () {
+    HomeComponent.prototype.testBtn = function () {
+        console.log("Fab Tapped");
     };
     HomeComponent.prototype.provide = function () {
         this.eventList = this.eventHandeler.eventList;
@@ -63,6 +61,14 @@ var HomeComponent = (function () {
         }
         // alert("HomeComponent: " + this.eventList.length);
     };
+    HomeComponent.prototype.editBtn = function () {
+    };
+    HomeComponent.prototype.extendTimeBtn = function () {
+    };
+    __decorate([
+        core_1.ViewChild("myProgress"), 
+        __metadata('design:type', core_1.ElementRef)
+    ], HomeComponent.prototype, "progress", void 0);
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

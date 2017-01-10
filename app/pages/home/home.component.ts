@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { Router } from "@angular/router";
 import { EventHandeler } from "../../shared/providers/event-handeler/event-handeler.provider";
 import listViewModule = require("ui/list-view");
 import observableArray = require("data/observable-array");
 import labelModule = require("ui/label");
-import {Page} from 'ui/page';
+import { Page } from 'ui/page';
+import { Progress } from "ui/progress";
 
-import { registerElement } from 'nativescript-angular/element-registry';
-registerElement('Card', () => require('nativescript-cardview').CardView);
-
+import { registerElement, ViewClass } from "nativescript-angular/element-registry";
+registerElement("CardView", () => require("nativescript-cardview").CardView);
+registerElement("LineProgressBar", () => require("nativescript-progressbar").LineProgressBar);
+registerElement("fab", ()=> require("nativescript-floatingactionbutton").Fab);
 
 @Component({
   selector: 'my-app',
@@ -22,10 +24,13 @@ export class HomeComponent implements OnInit {
   eventList = [];
   devMode: boolean = true;
 
+  progressValue: number = 30;
+
+  @ViewChild("myProgress") progress: ElementRef;
 
   constructor(private page: Page, private eventHandeler: EventHandeler) {
-    
-}
+
+  }
 
   ngOnInit() {
     this.eventList = this.eventHandeler.eventList;
@@ -36,30 +41,25 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  eventListTap(event) {
+  eventListTap() {
     // alert("Event Tapped");
-    alert("event");
+    alert("Tapped");
   }
 
   devTest() {
-    if (this.eventList.length > 0) {
-      alert("Item Array Length: " + this.eventList.length + "\n" +
-        this.eventList[this.eventList.length - 1].getTitle());
-    } else {
-      alert("Empty List");
-    }
+      this.progressValue += (5);
   }
 
   devDeleteList() {
     this.eventHandeler.deleteList();
     this.eventList = this.eventHandeler.eventList;
-  this.hasEvent = false;
+    this.hasEvent = false;
   }
 
   devGenerateEvents() {
     for (let i: number = 0; i < 50; i++) {
       this.eventHandeler.newEvent(
-        "Event Title: " + (i+1),
+        "Event Title: " + (i + 1),
         "Description: " + i, 3, 5, 6
       );
       this.eventList = this.eventHandeler.eventList;
@@ -67,8 +67,8 @@ export class HomeComponent implements OnInit {
     this.hasEvent = true;
   }
 
-  addEventBtn() {
-
+  testBtn() {
+    console.log("Fab Tapped");
   }
 
 
@@ -88,6 +88,14 @@ export class HomeComponent implements OnInit {
       alert("Block 2");
     }
     // alert("HomeComponent: " + this.eventList.length);
+
+  }
+
+  editBtn(){
+
+  }
+
+  extendTimeBtn(){
 
   }
 

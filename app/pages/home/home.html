@@ -1,41 +1,37 @@
+<!--REMEMBER TO ADD CORRECT ICON SIZES TO RESOURCE FOLDER-->
 <ActionBar class="action-bar" title="Home">
     <ActionItem *ngIf="devMode" (tap)="devTest()" android.systemIcon="ic_menu_settings_holo_light" android.position="right"></ActionItem>
     <ActionItem *ngIf="devMode" (tap)="devGenerateEvents()" android.systemIcon="ic_menu_add" android.position="right"></ActionItem>
     <ActionItem *ngIf="devMode" (tap)="devDeleteList()" android.systemIcon="ic_menu_clear_playlist" android.position="right"></ActionItem>
 </ActionBar>
 
-<StackLayout>
-    <CardView class="cardStyle" margin="10" elevation="40" radius="5">
-        <GridLayout rows="200, auto, auto" columns="auto, auto, *">
-            <Image src="http://nexceris.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg" stretch="aspectFill" colSpan="3" row="0"></Image>
-            <Label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3"></Label>
-            <Button text="DECLINE" tap="goAway" row="2" col="0"></Button>
-            <Button text="ACCEPT" row="2" col="1"></Button>
-        </GridLayout>
-    </CardView>
-</StackLayout>
+<fab [nsRouterLink]="['/event']" android.icon="res://ic_add_white.png" rippleColor="#f1f1f1" class="fab-button"></fab>
 
-
-<!--<StackLayout>
-<Image src="https://www.google.com/images/errors/logo_sm_2.png" ></Image>
-</StackLayout>-->
-
-<!--
 <StackLayout>
     <Label *ngIf="hasEvent == false" class="top-text label " text="Hmm... Looks kinda empty"></Label>
     <Label *ngIf="hasEvent == false" text="Try adding an event :)"></Label>
-
-    <ListView [items]="eventList" (itemTap)="eventListTap($event)" class="list-group">
+    <ListView [items]="eventList" (itemTap)="eventListTap()" class="list-group">
         <template let-item="item" let-odd="odd" let-even="even">
-            <GridLayout columns="auto, auto, *" rows="auto, auto, *">
-                <Label col="0" row="0" [text]="item.getTitle()" class="list-group-item"></Label>
-                <Label col="0" row="1" [text]="item.getDescription()"></Label>
-                <Label col="0" row="2" text="time"></Label>
-                <Label col="1" row="2" text="!!"></Label>
-            </GridLayout>
+            <CardView (tap)="eventListTap()" class="cardStyle" margin="20" elevation="30" radius="15">
+                <StackLayout class="form">
+                    <StackLayout orientation="horizontal">
+                        <Label [text]="item.getTitle()" class="card-label h3 font-weight-bold pull-left text-primary list-title"></Label>
+                        <LineProgressBar [progress]="progressValue" widthProgressBackground="50" widthProgressBarLine="30" backgroundColor="white"
+                            progressColor="blue" linearGradient="false" width="200" class="progress-bar"></LineProgressBar>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label class="card-label pull-left body" [text]="item.getDescription()"></Label>
+                    </StackLayout>
+                    <StackLayout orientation="horizontal">
+                        <Label class="card-label pull-right font-italic" col="0" row="2" text="time"></Label>
+                        <Label class="card-label pull-right font-italic" col="1" row="2" text="!!"></Label>
+                    </StackLayout>
+                    <StackLayout orientation="horizontal">
+                        <Button class="btn btn-primary" text="Edit" (tap)="editBtn()"></Button>
+                        <Button class="btn btn-primary" text="Extend time" (tap)="extendTimeBtn()"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </CardView>
         </template>
     </ListView>
-
-
-    <Button class="btn btn-primary add-btn" text="Add Event" (tap)="addEventBtn()" [nsRouterLink]="['/event']" pageTransition="fade"></Button>
-</StackLayout>-->
+</StackLayout>

@@ -15,6 +15,7 @@ import { EventHandeler } from "./shared/providers/event-handeler/event-handeler.
     declarations: [AppComponent,
         HomeComponent,
         EventAddComponent,
+
         ...navigatableComponents],
     bootstrap: [AppComponent],
     imports: [NativeScriptModule,
