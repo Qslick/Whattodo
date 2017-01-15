@@ -4,13 +4,20 @@ label {
     /*color: white;*/
 }
 
+.container-SL {
+    /*color: navajowhite;*/
+    color: black;
+    background-color: #e4e4e4;
+}
+
+
 .card-label {
     margin-top: 15px;
     margin-left: 15px;
 }
 
 .progress-bar {
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: 10px;
 }
 
@@ -19,6 +26,7 @@ color: blue;
 backgroundColor: orange;
 margin: 30px;
 }
+
 
 progress {
 width: 100%;
@@ -32,8 +40,8 @@ color: red;
 }
 
 .cardStyle {
-    background-color: #DCDCDC;
-    /*color: #ffffff;*/
+    background-color: white;
+    color: #ffffff;
     margin: 15px;
 }
 

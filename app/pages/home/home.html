@@ -5,18 +5,19 @@
     <ActionItem *ngIf="devMode" (tap)="devDeleteList()" android.systemIcon="ic_menu_clear_playlist" android.position="right"></ActionItem>
 </ActionBar>
 
-<fab [nsRouterLink]="['/event']" android.icon="res://ic_add_white.png" rippleColor="#f1f1f1" class="fab-button"></fab>
 
-<StackLayout>
+
+<StackLayout class="container-SL container-SL">
     <Label *ngIf="hasEvent == false" class="top-text label " text="Hmm... Looks kinda empty"></Label>
     <Label *ngIf="hasEvent == false" text="Try adding an event :)"></Label>
+    <!--<LineProgressBar *ngIf="hasEvent == false" [p3-->
     <ListView [items]="eventList" (itemTap)="eventListTap()" class="list-group">
         <template let-item="item" let-odd="odd" let-even="even">
-            <CardView (tap)="eventListTap()" class="cardStyle" margin="20" elevation="30" radius="15">
-                <StackLayout class="form">
+            <CardView (tap)="eventListTap()" class="cardStyle" margin="8" elevation="30" radius="4">
+                <StackLayout class="card-SL form">
                     <StackLayout orientation="horizontal">
                         <Label [text]="item.getTitle()" class="card-label h3 font-weight-bold pull-left text-primary list-title"></Label>
-                        <LineProgressBar [progress]="progressValue" widthProgressBackground="50" widthProgressBarLine="30" backgroundColor="white"
+                        <LineProgressBar [progress]="progressValue" widthProgressBackground="50" widthProgressBarLine="50" backgroundColor="white"
                             progressColor="blue" linearGradient="false" width="200" class="progress-bar"></LineProgressBar>
                     </StackLayout>
                     <StackLayout>
@@ -35,3 +36,5 @@
         </template>
     </ListView>
 </StackLayout>
+
+<fab [nsRouterLink]="['/event']" hideOnSwipeOfView="true" swipeAnimation="true" android.icon="res://ic_add_white.png" rippleColor="#006968" class="fab-button"></fab>

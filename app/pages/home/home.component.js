@@ -2,6 +2,7 @@
 var core_1 = require("@angular/core");
 var event_handeler_provider_1 = require("../../shared/providers/event-handeler/event-handeler.provider");
 var page_1 = require('ui/page');
+var fs = require("file-system");
 var element_registry_1 = require("nativescript-angular/element-registry");
 element_registry_1.registerElement("CardView", function () { return require("nativescript-cardview").CardView; });
 element_registry_1.registerElement("LineProgressBar", function () { return require("nativescript-progressbar").LineProgressBar; });
@@ -13,7 +14,10 @@ var HomeComponent = (function () {
         this.hasEvent = false;
         this.eventList = [];
         this.devMode = true;
+        this.totalProgress = 90;
         this.progressValue = 30;
+        this.saveData();
+        this.readData();
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.eventList = this.eventHandeler.eventList;
@@ -23,13 +27,45 @@ var HomeComponent = (function () {
         else {
             this.hasEvent = false;
         }
+        var documentsFolder = fs.knownFolders.documents();
+        var currentAppFolder = fs.knownFolders.currentApp();
+        var tempFolder = fs.knownFolders.temp();
+        var testPath = "///test.txt";
+        // Get a normalized path such as <folder.path>/test.txt from <folder.path>///test.txt
+        this.documents = fs.path.normalize(documentsFolder.path + testPath);
+        this.currentApp = fs.path.normalize(currentAppFolder.path + testPath);
+        this.temp = fs.path.normalize(tempFolder.path + testPath);
+    }; //end if ngOnInit()
+    HomeComponent.prototype.saveData = function () {
+        var documentsFolder = fs.knownFolders.documents();
+        var path = fs.path.join(documentsFolder.path, "FileFromPath.txt");
+        var file = fs.File.fromPath(path);
+        // Writing text to the file.
+        // file.write(this.eventHandeler.eventList)
+        //   .then(result => {
+        //     // Succeeded writing to the file.
+        //     file.readText().then(res => {
+        //       // Succeeded read from file.
+        //       // this.isContentSaved = true;
+        //       // this.savedContent = res;
+        //       console.log("File content: " + res);
+        //     });
+        //   }).catch(err => {
+        //     console.log(err.stack);
+        //   });;
+    };
+    HomeComponent.prototype.readData = function () {
+        var documentsFolder = fs.knownFolders.documents();
+        var path = fs.path.join(documentsFolder.path, "FileFromPath.txt");
+        var file = fs.File.fromPath(path);
+        console.log("File Read Data: " + file.readText());
     };
     HomeComponent.prototype.eventListTap = function () {
         // alert("Event Tapped");
         alert("Tapped");
     };
     HomeComponent.prototype.devTest = function () {
-        this.progressValue += (5);
+        alert("Dev Test Method");
     };
     HomeComponent.prototype.devDeleteList = function () {
         this.eventHandeler.deleteList();
