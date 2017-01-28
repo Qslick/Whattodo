@@ -1,0 +1,2 @@
+C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\src\main\assets\app\pages\home\home.component.js
+C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\src\main\assets\app\shared\database\database.js

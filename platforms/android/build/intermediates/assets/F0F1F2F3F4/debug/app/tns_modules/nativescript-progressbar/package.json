@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-progressbar@^1.0.2",
+        "scope": null,
+        "escapedName": "nativescript-progressbar",
+        "name": "nativescript-progressbar",
+        "rawSpec": "^1.0.2",
+        "spec": ">=1.0.2 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo"
+    ]
+  ],
+  "_from": "nativescript-progressbar@>=1.0.2 <2.0.0",
+  "_id": "nativescript-progressbar@1.0.2",
+  "_inCache": true,
+  "_location": "/nativescript-progressbar",
+  "_nodeVersion": "4.3.0",
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-progressbar-1.0.2.tgz_1456940277277_0.0974132299888879"
+  },
+  "_npmUser": {
+    "name": "sebawita",
+    "email": "sebawita@gmail.com"
+  },
+  "_npmVersion": "2.14.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-progressbar@^1.0.2",
+    "scope": null,
+    "escapedName": "nativescript-progressbar",
+    "name": "nativescript-progressbar",
+    "rawSpec": "^1.0.2",
+    "spec": ">=1.0.2 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-progressbar/-/nativescript-progressbar-1.0.2.tgz",
+  "_shasum": "a367674ce44a0cfc0ee84dfab94e548289591220",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-progressbar@^1.0.2",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo",
+  "author": {
+    "name": "Sebastian Witalec",
+    "url": "https://github.com/sebawita"
+  },
+  "bugs": {
+    "url": "https://github.com/sebawita/nativescript-progressbar/issues"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "description": "XML widget to create native Progress Bars in NativeScript apps.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a367674ce44a0cfc0ee84dfab94e548289591220",
+    "tarball": "https://registry.npmjs.org/nativescript-progressbar/-/nativescript-progressbar-1.0.2.tgz"
+  },
+  "gitHead": "b6725da5b7c61e37c9a8167aa056459eebc1b654",
+  "homepage": "https://github.com/sebawita/nativescript-progressbar",
+  "keywords": [
+    "NativeScript",
+    "native",
+    "script",
+    "CircleProgressBar",
+    "CircleSegmentBar",
+    "ArcSegmentBar",
+    "LineSegmentBar",
+    "android",
+    "ios",
+    "sebawita"
+  ],
+  "license": "Apache-2.0",
+  "main": "components.js",
+  "maintainers": [
+    {
+      "name": "sebawita",
+      "email": "sebawita@gmail.com"
+    }
+  ],
+  "name": "nativescript-progressbar",
+  "nativescript": {
+    "platforms": {
+      "android": "1.6.0",
+      "ios": "1.6.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebawita/nativescript-progressbar.git"
+  },
+  "scripts": {},
+  "version": "1.0.2"
+}

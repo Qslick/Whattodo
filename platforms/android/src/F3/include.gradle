@@ -1,0 +1,18 @@
+//default elements
+android {
+   productFlavors {
+       "nativescript-progressbar" {
+           dimension "nativescript-progressbar"
+       }
+   }
+}
+
+repositories {
+  maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+   compile 'com.github.natasam:DemoProgressViewsLibApp:fa2f8f01e0'
+}

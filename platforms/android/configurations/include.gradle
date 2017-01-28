@@ -1,0 +1,4 @@
+
+android {
+    flavorDimensions "nativescriptcardview", "nativescriptcouchbase", "nativescriptfloatingactionbutton", "nativescriptprogressbar", "tnscoremoduleswidgets"
+}
