@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 
 import { EventHandeler } from "../../shared/providers/event-handeler/event-handeler.provider";
 import { HomeComponent } from "../home/home.component";
@@ -25,6 +26,7 @@ export class EventAddComponent implements OnInit {
     saturdayCheck: boolean = false;
     sundayCheck: boolean = false;
 
+    key: string;
     title: string = "Computer Science";
     description: string = "description I guess";
     priority: number = 2;
@@ -37,17 +39,37 @@ export class EventAddComponent implements OnInit {
     endTimeCheck: boolean = true;
     priorityCheck: boolean = true;
 
+    updateEvent: boolean = false;
 
-    constructor(private router: Router, private database: Database, private eventHandeler: EventHandeler) {
 
+    constructor(private route: ActivatedRoute, private router: Router, private database: Database, private eventHandeler: EventHandeler) {
+        this.route.queryParams.subscribe(params => {
+            if (params["key"]) {//FOR AUTO FILL FOR MAKING NEW EVENT. DONT FORGET TO DELETE THIS!!!
+                this.updateEvent = true;
+                this.key = params["key"];
+                this.title = params["title"];
+                this.description = params["description"],
+                    this.priority = params["priority"],
+                    this.startTime = params["startTime"],
+                    this.endTime = params["endTime"]
+            }//end of if
+
+            // this.key = params["key"];
+            // this.title = params["title"];
+            // this.description = params["description"],
+            //     this.priority = params["priority"],
+            //     this.startTime = params["startTime"],
+            //     this.endTime = params["endTime"]
+
+        });
     }
 
-    ngOnInit(){
-        
+    ngOnInit() {
+
     }
 
     doneBtn() {
- 
+
         if (this.title == null) {
             alert("Please enter a title.");
         }
@@ -64,20 +86,24 @@ export class EventAddComponent implements OnInit {
             alert("Please enter an end time.");
         }
         else {
-            this.database.newEvent(
-                this.title,
-                this.description,
-                this.priority,
-                this.startTime,
-                this.endTime
-            );
-            // this.eventHandeler.newEvent(
-            //     this.title,
-            //     this.description,
-            //     this.priority,
-            //     this.startTime,
-            //     this.endTime
-            // );
+            if (this.updateEvent == true) {
+                this.database.editEvent(
+                    this.key,
+                    this.title,
+                    this.description,
+                    this.priority,
+                    this.startTime,
+                    this.endTime
+                );
+            } else {
+                this.database.newEvent(
+                    this.title,
+                    this.description,
+                    this.priority,
+                    this.startTime,
+                    this.endTime
+                );
+            }
             this.router.navigate(["/home"]);
 
         }//end of else
@@ -99,10 +125,10 @@ export class EventAddComponent implements OnInit {
 
 
     private monday() {
-        if(this.mondayCheck == true){
+        if (this.mondayCheck == true) {
             this.mondayCheck = false;
             alert("Button tapped now: " + this.mondayCheck);
-        } else if(this.mondayCheck ==false){
+        } else if (this.mondayCheck == false) {
             this.mondayCheck = true;
             alert("Button tapped now: " + this.mondayCheck);
         } else {

@@ -10,7 +10,7 @@
         "spec": ">=1.0.2 <2.0.0",
         "type": "range"
       },
-      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo"
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo"
     ]
   ],
   "_from": "nativescript-progressbar@>=1.0.2 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "a367674ce44a0cfc0ee84dfab94e548289591220",
   "_shrinkwrap": null,
   "_spec": "nativescript-progressbar@^1.0.2",
-  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo",
   "author": {
     "name": "Sebastian Witalec",
     "url": "https://github.com/sebawita"

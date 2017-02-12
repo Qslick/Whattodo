@@ -10,7 +10,7 @@
         "spec": "3.2.1",
         "type": "version"
       },
-      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo"
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo"
     ]
   ],
   "_from": "@angular/router@3.2.1",
@@ -45,7 +45,7 @@
   "_shasum": "eeace722a5a222bd6b1379df7a5bc580ace093ca",
   "_shrinkwrap": null,
   "_spec": "@angular/router@3.2.1",
-  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo",
   "author": {
     "name": "angular"
   },

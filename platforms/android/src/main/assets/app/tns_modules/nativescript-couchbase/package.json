@@ -1,31 +1,69 @@
 {
-  "name": "nativescript-couchbase",
-  "version": "1.0.16",
+  "_args": [
+    [
+      {
+        "raw": "nativescript-couchbase@^1.0.16",
+        "scope": null,
+        "escapedName": "nativescript-couchbase",
+        "name": "nativescript-couchbase",
+        "rawSpec": "^1.0.16",
+        "spec": ">=1.0.16 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo"
+    ]
+  ],
+  "_from": "nativescript-couchbase@>=1.0.16 <2.0.0",
+  "_id": "nativescript-couchbase@1.0.17",
+  "_inCache": true,
+  "_location": "/nativescript-couchbase",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-couchbase-1.0.17.tgz_1485985641391_0.7502140845172107"
+  },
+  "_npmUser": {
+    "name": "nraboy",
+    "email": "nic@nraboy.com"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-couchbase@^1.0.16",
+    "scope": null,
+    "escapedName": "nativescript-couchbase",
+    "name": "nativescript-couchbase",
+    "rawSpec": "^1.0.16",
+    "spec": ">=1.0.16 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-couchbase/-/nativescript-couchbase-1.0.17.tgz",
+  "_shasum": "6e9dc6ab92aa9aa292d5a2d781073608d21ab66d",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-couchbase@^1.0.16",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo",
+  "author": {
+    "name": "Nic Raboy",
+    "url": "https://www.thepolyglotdeveloper.com"
+  },
+  "bugs": {
+    "url": "https://github.com/couchbaselabs/nativescript-couchbase/issues"
+  },
+  "dependencies": {},
   "description": "Couchbase Lite plugin for Telerik NativeScript",
-  "main": "couchbase.js",
-  "nativescript": {
-    "platforms": {
-      "android": "2.0.0",
-      "ios": "2.0.0"
-    }
+  "devDependencies": {
+    "tns-core-modules": "^2.5.0"
   },
-  "scripts": {
-    "build": "tsc",
-    "setup-angular": "cd ng-demo; npm install; cd ..; npm run build; cd ng-demo; tns plugin add ..; cd ..",
-    "setup-vanilla": "cd demo; npm install; cd ..; npm run build; cd demo; tns plugin add ..; cd ..",
-    "setup": "npm run setup-vanilla; npm run setup-angular",
-    "prepare-angular": "npm run build; cd ng-demo; tns plugin remove nativescript-couchbase; tns plugin add ..; tns install",
-    "prepare-vanilla": "npm run build; cd demo; tns plugin remove nativescript-couchbase; tns plugin add ..; tns install",
-    "prepare": "npm run prepare-vanilla; npm run prepare-angular",
-    "android-angular": "npm run prepare-angular; cd ng-demo; tns run android",
-    "android-vanilla": "npm run prepare-vanilla; cd demo; tns run android",
-    "ios-angular": "npm run prepare-angular; cd ng-demo; tns emulate ios",
-    "ios-vanilla": "npm run prepare-vanilla; cd demo; tns emulate ios"
+  "directories": {},
+  "dist": {
+    "shasum": "6e9dc6ab92aa9aa292d5a2d781073608d21ab66d",
+    "tarball": "https://registry.npmjs.org/nativescript-couchbase/-/nativescript-couchbase-1.0.17.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/couchbaselabs/nativescript-couchbase.git"
-  },
+  "gitHead": "dbf14a1b830347ac7f15614104039e315067ff0b",
+  "homepage": "https://github.com/couchbaselabs/nativescript-couchbase#readme",
   "keywords": [
     "couchbase",
     "couchbase mobile",
@@ -33,40 +71,40 @@
     "nosql",
     "nativescript"
   ],
-  "author": {
-    "name": "Nic Raboy",
-    "url": "https://www.thepolyglotdeveloper.com"
-  },
   "license": "Apache-2.0",
-  "gitHead": "d9e1a669ba0a53c23dee11dd04e9418b2082ad86",
-  "bugs": {
-    "url": "https://github.com/couchbaselabs/nativescript-couchbase/issues"
-  },
-  "homepage": "https://github.com/couchbaselabs/nativescript-couchbase#readme",
-  "_id": "nativescript-couchbase@1.0.16",
-  "_shasum": "39eb98c1e98e8c8400ec1854d644cc948f7ca9c3",
-  "_from": "nativescript-couchbase@latest",
-  "_npmVersion": "4.0.3",
-  "_nodeVersion": "4.6.0",
-  "_npmUser": {
-    "name": "nraboy",
-    "email": "nic@nraboy.com"
-  },
-  "dist": {
-    "shasum": "39eb98c1e98e8c8400ec1854d644cc948f7ca9c3",
-    "tarball": "https://registry.npmjs.org/nativescript-couchbase/-/nativescript-couchbase-1.0.16.tgz"
-  },
+  "main": "couchbase",
   "maintainers": [
     {
       "name": "nraboy",
       "email": "nic@nraboy.com"
     }
   ],
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/nativescript-couchbase-1.0.16.tgz_1483744518590_0.41115858359262347"
+  "name": "nativescript-couchbase",
+  "nativescript": {
+    "platforms": {
+      "android": "2.5.0",
+      "ios": "2.5.0"
+    }
   },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/nativescript-couchbase/-/nativescript-couchbase-1.0.16.tgz",
-  "readme": "ERROR: No README data found!"
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/couchbaselabs/nativescript-couchbase.git"
+  },
+  "scripts": {
+    "build": "echo \"Building...\"; tsc;",
+    "configure": "echo \"Configuring...\"; npm run configure-vanilla; npm run configure-angular;",
+    "configure-angular": "echo \"Configuring Angular...\"; cd ng-demo; tns install; tns plugin remove nativescript-couchbase; tns plugin add ..; cd ..",
+    "configure-vanilla": "echo \"Configuring Vanilla...\"; cd demo; tns install; tns plugin remove nativescript-couchbase; tns plugin add ..; cd ..",
+    "deploy-android-angular": "echo \"Deploying Android Angular...\"; npm run configure-angular; cd ng-demo; tns run android",
+    "deploy-android-vanilla": "echo \"Deploying Android Vanilla...\"; npm run configure-vanilla; cd demo; tns run android",
+    "deploy-ios-angular": "echo \"Deploying iOS Angular...\"; npm run configure-angular; cd ng-demo; tns run ios",
+    "deploy-ios-vanilla": "echo \"Deploying iOS Vanilla...\"; npm run configure-vanilla; cd demo; tns run ios",
+    "prepare": "echo \"Preparing...\"; npm run build;",
+    "webpack-angular": "echo \"Webpacking Angular...\"; npm run configure; cd ng-demo; npm run webpack-ios; npm run webpack-android; cd ..;",
+    "webpack-vanilla": "echo \"Webpacking Vanilla...\"; npm run configure; cd demo; npm run webpack-ios; npm run webpack-android; cd ..;"
+  },
+  "typings": "couchbase.d.ts",
+  "version": "1.0.17"
 }

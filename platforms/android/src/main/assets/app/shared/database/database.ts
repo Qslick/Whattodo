@@ -39,12 +39,61 @@ export class Database {
     // updateDocument(key, data)
     // createDocument(data, key)
 
-    reset() {
-        console.log("DB RESET");
+    // event = { //createing event and storeing it's key inside
+    //         key: numOfEvents,
+    //         title: title,
+    //         description: description,
+    //         priority: priority,
+    //         startTime: startTime,
+    //         endTime: endTime
+    //     };
+
+
+    public deleteEvent(key: string) {
+        this.eventDatabase.deleteDocument(key);
+
+        let number_of_eventNew = this.lookupDatabase.getDocument(this.lookupDocumentKey).number_of_events;
+        let indexCurrentNew = this.lookupDatabase.getDocument(this.lookupDocumentKey).index;
+
+        number_of_eventNew = String((Number(number_of_eventNew)-1));
+        indexCurrentNew = String((Number(indexCurrentNew)-1));
+
+        this.lookupDatabase.updateDocument(this.lookupDocumentKey, {
+            index: indexCurrentNew,
+            number_of_events: number_of_eventNew
+        });
+        this.eventList[key] = this.eventList[this.eventList.length-1];
+        this.eventList[this.eventList.length-1] = null;
+    }
+    
+    public reset() {
+
+        let index = this.lookupDatabase.getDocument(this.lookupDocumentKey).number_of_events
+        index = Number(index);
+        for (let t = 0; t < index; t++) {
+            let eventKeys = String(t);
+            this.eventDatabase.deleteDocument(eventKeys);
+        }
+
         this.lookupDatabase.updateDocument(this.lookupDocumentKey, {
             index: "-1",
             number_of_events: "-1"
         });
+        this.eventList = [];
+
+        console.log("DB RESET");
+    }
+
+    public editEvent(key: string, title: string, description: string, priority: number, startTime: number, endTime: number) {
+        this.eventDatabase.updateDocument(key, {
+            key: key,
+            title: title,
+            description: description,
+            priority: priority,
+            startTime: startTime,
+            endTime: endTime
+        });
+        this.updateList();
     }
 
     public newEvent(title: string, description: string, priority: number, startTime: number, endTime: number) {
@@ -88,5 +137,4 @@ export class Database {
     public getEventList() {
         return this.eventList;
     }
-
-}//end of CLass
+}

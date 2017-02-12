@@ -5991,7 +5991,6 @@
                         }
                     }
                 },
-                
                 onHandleError: function (delegate, current, target, error) {
                     delegate.handleError(target, error);
                     _this.triggerError(error);

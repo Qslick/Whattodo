@@ -99,7 +99,34 @@ export class SomeComponent  {
 - **font-size** - checkbox is sized to text from here  : default 15
 - **border-width** - set the line width of the checkbox element: iOS only
 
+## Styling [Android]
+- **checkStyle** - set to the name of your drawable
+- **checkPadding** - set the padding of the checkbox
+
+Add the following to `app/App_Resources/Android/drawable/checkbox_grey.xml`
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/ic_checkbox_checked_incomplete" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/ic_checkbox_grey_incomplete" />
+    <item android:state_checked="true" android:drawable="@drawable/ic_checkbox_checked_grey"/>
+    <item android:state_checked="false" android:drawable="@drawable/ic_checkbox_grey" />
+</selector>
+```
+
+
 ## Demo Setup
 * npm install tns-platform-declarations
 * npm preparedemo
 * npm run demo.ios
+
+
+#### Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
+| [<img src="https://avatars0.githubusercontent.com/u/6006148?v=3" width="100px;"/><br /><sub>Brad Martin</sub>](https://bradmartin.net/) | [<img src="https://avatars2.githubusercontent.com/u/1542376?v=3" width="100px;"/><br /><sub>Steve McNiven-Scott</sub>](https://github.com/sitefinitysteve)  |  [<img src="https://avatars3.githubusercontent.com/u/6695919?v=3" width="100px;"/><br /><sub>Osei Fortune</sub>](https://github.com/triniwiz)   | [<img src="https://avatars2.githubusercontent.com/u/457187?v=3" width="100px;"/><br /><sub>Nathan Walker</sub>](https://github.com/NathanWalker)   | 
+|---|---|---|---|---|
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->

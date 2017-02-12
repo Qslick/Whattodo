@@ -2,228 +2,200 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="false"
-        revision="24.0.2"
-        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\okhttp-3.3.1_b3ffd8e4e9d4a12a45bccc68e207cd8d54af897e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\support-annotations-24.2.1_c758550da6d9b89777aeccd25bd0fa0aa76e4e17.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-design-24.2.1_a0fbd9eb2fddb185c568bd41c68b1f7366c822b0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android-sqlite-custom\1.3.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="c82bc8adb671652b83ea2d785d0847435e4f3442">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.couchbase.lite-couchbase-lite-android-sqlite-custom-1.3.1_cb4a73afafc559bab8aba94d6b63dfc87b2e3fa7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-cardview-v7-24.2.1_388951c4335e6230ad25ddf3b9c0ae12b96f6292.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\Whattodo\runtime\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="791326bdf152dc35a200aea2938d5e5f2af0c81a">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\Whattodo-runtime-unspecified_378b00683aec79208b331ae2f052941fb69fd446.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\gson-2.6.2_c9c9ba832e02a070c05456982e10dd0585fc7c78.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.couchbase.lite\couchbase-lite-java-core\1.3.1\3807f8d70802e9bee03617bc9d0b1a0bbbdab656\couchbase-lite-java-core-1.3.1.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="3807f8d70802e9bee03617bc9d0b1a0bbbdab656">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\couchbase-lite-java-core-1.3.1_0fc022d9c792db3863a206dd8e859d8aa5879c0e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\Whattodo\runtime\unspecified\jars\libs\binding-generator.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="fea98d375ec6edba3b9192dfecb16864c8c1fb10">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\binding-generator_f9617e7e1b2db7a0d4fdacce5a1c12422294f7e8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\internal_impl-24.2.1_47a415a0411f80f533dba9f20a10f75e9c84cbd4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-recyclerview-v7-24.2.1_252ad8f8832e84de7393b7c07fbaecc58a9657f4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-core-ui-24.2.1_1208f729b1cc9a9f66bcb0392f73f98c4ee9f1c1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-compat-24.2.1_0969e856471d5d850fe2baa743a62f14eb4a048b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\internal_impl-24.2.1_c7f0058c4ae54d3b92b3c1bdf46d0d11b5da10f9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\internal_impl-24.2.1_74a62191103bcabc71374e668930f049eb9d43fd.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\internal_impl-24.2.1_c731a79a380214d6ae7f0f70413d81d02508d0ba.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-fragment-24.2.1_6e443e4f8a94d0d492e6297d85fc7f13b782e8f4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.5.0\489b7552dd3322b63f694122d16ce62c21c303b5\jackson-databind-2.5.0.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="489b7552dd3322b63f694122d16ce62c21c303b5">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\jackson-databind-2.5.0_27d2467821f6ec722e508c8fdf04b2025c32a7e3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-vector-drawable-24.2.1_96594cca41ed23a21c57e001e587597c0f9e5d49.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.github.natasam\DemoProgressViewsLibApp\fa2f8f01e0\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="715f9d92dd200edd4c85292236b207338e9db763">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.github.natasam-DemoProgressViewsLibApp-fa2f8f01e0_ec6f1ad22e82d2b2432c058d7f057f58e18ec93b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-animated-vector-drawable-24.2.1_f559b333c5f10859b5bf88098ccab8660e5eb514.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-v4-24.2.1_90969bd0cb69b374967dde943d646d2da65b398a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="9eec987a0056adc79d607b32e7e1c41997a434a7">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\intermediates-exploded-aar-widgets-release_2caf99e1b67cb455916d8994316fe66d1a2bc290.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.5.0\a2a55a3375bc1cef830ca426d68d2ea22961190e\jackson-annotations-2.5.0.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="a2a55a3375bc1cef830ca426d68d2ea22961190e">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\jackson-annotations-2.5.0_3e8de2d4c76461ec8ab54ad56403dc420f32cdf1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-core-utils-24.2.1_b4b08ae1926d92b01e2e351763871c357986d6d1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\jars\classes.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="2ce3006140ca3087f08a9f0ba1211255253474c5">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.couchbase.lite-couchbase-lite-android-1.3.1_95a643ba1632662638623ed9d33238dc0ba2cef1.jar" />
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-animated-vector-drawable-25.1.1_58c8bd5ed7c140bac797725b13851f200ea48fa0.jar" />
     </item>
     <item
         jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.5.0\b2ece1bd57ac7b4c315b7505b65ac79cb1da4270\jackson-core-2.5.0.jar"
         jumboMode="false"
-        revision="24.0.2"
+        revision="25.0.2"
         sha1="b2ece1bd57ac7b4c315b7505b65ac79cb1da4270">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\jackson-core-2.5.0_4351971ce93912b46a531189a66e9c69e9b50c56.jar" />
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\jackson-core-2.5.0_4351971ce93912b46a531189a66e9c69e9b50c56.jar" />
     </item>
     <item
-        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.5.0\a2a55a3375bc1cef830ca426d68d2ea22961190e\jackson-annotations-2.5.0.jar"
         jumboMode="false"
-        revision="24.0.2"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\okio-1.8.0_2273335046a0546635ff38d5ea25429068a26851.jar" />
+        revision="25.0.2"
+        sha1="a2a55a3375bc1cef830ca426d68d2ea22961190e">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\jackson-annotations-2.5.0_3e8de2d4c76461ec8ab54ad56403dc420f32cdf1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-media-compat-25.1.1_6499a02a4809cfab7faf281c5808ec8359ef852a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-recyclerview-v7-25.1.1_35df92c251f9d13ed15f1807a2d814dfe9db943a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\Whattodo\runtime\unspecified\jars\libs\binding-generator.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d82f3ca98719f09b65db6aeaf450ad3bafc46e81">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\binding-generator_9ab4a6db76ba48c00f1ad9fa2272e116e45aa5fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-core-utils-25.1.1_5f2cf15f67c59d5fc95a9e4857076de45102e3ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-vector-drawable-25.1.1_21c799defe57ac8857f94e9a535379ab920eb0cd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.couchbase.lite\couchbase-lite-java-core\1.3.1\3807f8d70802e9bee03617bc9d0b1a0bbbdab656\couchbase-lite-java-core-1.3.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="3807f8d70802e9bee03617bc9d0b1a0bbbdab656">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\couchbase-lite-java-core-1.3.1_0fc022d9c792db3863a206dd8e859d8aa5879c0e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-compat-25.1.1_cc7339a9b115215aa39c3b441fb7c5a15b866e8e.jar" />
     </item>
     <item
         jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.github.oxo42\stateless4j\2.4.0\128aca4ace585f0b42faa739d0b968a154debb7a\stateless4j-2.4.0.jar"
         jumboMode="false"
-        revision="24.0.2"
+        revision="25.0.2"
         sha1="128aca4ace585f0b42faa739d0b968a154debb7a">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\stateless4j-2.4.0_95ee9390376e2af0e2f5a457f1c93c050e270c59.jar" />
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\stateless4j-2.4.0_95ee9390376e2af0e2f5a457f1c93c050e270c59.jar" />
     </item>
     <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
         jumboMode="false"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\internal_impl-24.2.1_c9f0cd34f8eb7513b9f8fd4da543eb58b2ea3b30.jar" />
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-fragment-25.1.1_cce3d660b102c1422cd0db5cfcdcffe904bfab18.jar" />
     </item>
     <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
         jumboMode="false"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-appcompat-v7-24.2.1_648b5b30fab6e2a0fa3dbee28cec076ca0881bcd.jar" />
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-core-ui-25.1.1_893dd58b6954f5b060e9c9e193cf5c7f0195095c.jar" />
     </item>
     <item
-        jar="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
         jumboMode="false"
-        revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-media-compat-24.2.1_dc1c09e2c7718b8130ad5b87a073ceaf31cf7167.jar" />
+        revision="25.0.2"
+        sha1="8a73b09319cc3945912970487ced4c7724acc97d">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\intermediates-exploded-aar-widgets-release_01e60eaff7ade9882e36e43d35b8a997bd4fe06a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-support-v4-25.1.1_e268bd59f67bf23f02ee8f4602d73eb837ad449a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="2ce3006140ca3087f08a9f0ba1211255253474c5">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.couchbase.lite-couchbase-lite-android-1.3.1_045dec932c16b70313253e520a373cb27c25df55.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-appcompat-v7-25.1.1_b81c4decd22e014eb35c584eb9f7bb5366280359.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\okio-1.8.0_2273335046a0546635ff38d5ea25429068a26851.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-transition-25.1.1_61766620bd2587b504a73c66ae8c9a4bd82d3df6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.github.natasam\DemoProgressViewsLibApp\fa2f8f01e0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="715f9d92dd200edd4c85292236b207338e9db763">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.github.natasam-DemoProgressViewsLibApp-fa2f8f01e0_a882010e83e662e058afebd8a22d6bde51ad4f13.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\Whattodo\runtime\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="632bf39700c28ba66c117628dab343126ef89551">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\Whattodo-runtime-unspecified_f25817b681ead35750543cb01279c3ee89ec02e6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\gson-2.6.2_c9c9ba832e02a070c05456982e10dd0585fc7c78.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android-sqlite-custom\1.3.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c82bc8adb671652b83ea2d785d0847435e4f3442">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.couchbase.lite-couchbase-lite-android-sqlite-custom-1.3.1_0c6b29439882f5595912a9fb8f94bf64ff0fa827.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.5.0\489b7552dd3322b63f694122d16ce62c21c303b5\jackson-databind-2.5.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="489b7552dd3322b63f694122d16ce62c21c303b5">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\jackson-databind-2.5.0_27d2467821f6ec722e508c8fdf04b2025c32a7e3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\support-annotations-25.1.1_25c3e1608ca87d046e9acaffdd4c8ac0d96add69.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\okhttp-3.3.1_b3ffd8e4e9d4a12a45bccc68e207cd8d54af897e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-cardview-v7-25.1.1_98323c7d568cb1ec65a619b18f41856b0a30b3ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="C:\Users\Quinn\Documents\Development\Whattodo2\Whattodo\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4\debug\com.android.support-design-25.1.1_10ebe3f8f4966e9174a1bcfe67719bd185349145.jar" />
     </item>
 
 </items>

@@ -10,23 +10,23 @@
         "spec": ">=1.2.3 <2.0.0",
         "type": "range"
       },
-      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo"
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo"
     ]
   ],
   "_from": "nativescript-checkbox@>=1.2.3 <2.0.0",
-  "_id": "nativescript-checkbox@1.2.3",
+  "_id": "nativescript-checkbox@1.2.6",
   "_inCache": true,
   "_location": "/nativescript-checkbox",
-  "_nodeVersion": "5.7.1",
+  "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/nativescript-checkbox-1.2.3.tgz_1480957573619_0.8938269997015595"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-checkbox-1.2.6.tgz_1486668436153_0.21135455556213856"
   },
   "_npmUser": {
-    "name": "bradmartin",
-    "email": "bradmartin0905@gmail.com"
+    "name": "triniwiz",
+    "email": "fortune.osei@yahoo.com"
   },
-  "_npmVersion": "3.6.0",
+  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
     "raw": "nativescript-checkbox@^1.2.3",
@@ -40,11 +40,11 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nativescript-checkbox/-/nativescript-checkbox-1.2.3.tgz",
-  "_shasum": "5ea7d3cd4bbc762894d04ace466da5bff6eef6e1",
+  "_resolved": "https://registry.npmjs.org/nativescript-checkbox/-/nativescript-checkbox-1.2.6.tgz",
+  "_shasum": "fbde51a7af7ee0775a1322af927c2618c0d3a15a",
   "_shrinkwrap": null,
   "_spec": "nativescript-checkbox@^1.2.3",
-  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo",
   "author": {
     "name": "Brad Martin",
     "email": "bradwaynemartin@gmail.com"
@@ -77,10 +77,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "5ea7d3cd4bbc762894d04ace466da5bff6eef6e1",
-    "tarball": "https://registry.npmjs.org/nativescript-checkbox/-/nativescript-checkbox-1.2.3.tgz"
+    "shasum": "fbde51a7af7ee0775a1322af927c2618c0d3a15a",
+    "tarball": "https://registry.npmjs.org/nativescript-checkbox/-/nativescript-checkbox-1.2.6.tgz"
   },
-  "gitHead": "fb42b5a420ffd2ace516b3b5251e6441bc7d8f45",
+  "gitHead": "61da7465c9de0810ccd6ebe1469fa53579c0c9ad",
   "homepage": "https://github.com/bradmartin/nativescript-checkbox",
   "keywords": [
     "NativeScript",
@@ -103,6 +103,10 @@
     {
       "name": "sitefinitysteve",
       "email": "steve@sitefinitysteve.com"
+    },
+    {
+      "name": "triniwiz",
+      "email": "fortune.osei@yahoo.com"
     },
     {
       "name": "walkerrunpdx",
@@ -130,9 +134,9 @@
     "debug.android": "npm run preparedemo && cd demo && tns debug android",
     "debug.ios": "npm run preparedemo && cd demo && tns debug ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android",
-    "demo.ios": "npm run preparedemo && cdcd demo && tns emulate ios",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
     "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-checkbox && tns plugin add .. && tns install",
     "setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
   },
-  "version": "1.2.3"
+  "version": "1.2.6"
 }

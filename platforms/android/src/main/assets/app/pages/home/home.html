@@ -17,9 +17,9 @@
 <StackLayout class="container-SL container-SL" *ngIf!="testMode">
     <Label *ngIf="hasEvent == false" class="top-text label " text="Hmm... Looks kinda empty"></Label>
     <Label *ngIf="hasEvent == false" text="Try adding an event :)"></Label>
-    <ListView [items]="eventList" (itemTap)="eventListTap()" class="list-group">
+    <ListView [items]="eventList" (itemTap)="onItemTap($event)" class="list-group">
         <template let-item="item" let-odd="odd" let-even="even">
-            <CardView (tap)="eventListTap()" class="cardStyle" margin="8" elevation="30" radius="4">
+            <CardView (tap)="eventListTap($event)" class="cardStyle" margin="8" elevation="30" radius="4">
                 <StackLayout class="card-SL form">
                     <StackLayout orientation="horizontal">
                         <Label [text]="item.title" class="card-label h3 font-weight-bold pull-left text-primary list-title"></Label>
@@ -34,8 +34,8 @@
                         <Label class="card-label pull-right font-italic" col="1" row="2" text="!!"></Label>
                     </StackLayout>
                     <StackLayout orientation="horizontal">
-                        <Button class="btn btn-primary" text="Edit" (tap)="editBtn()"></Button>
-                        <Button class="btn btn-primary" text="Extend time" (tap)="extendTimeBtn()"></Button>
+                        <Button class="btn btn-primary" text="Edit" (tap)="editBtn(item)"></Button>
+                        <Button class="btn btn-primary" text="Extend time" (tap)="extendTimeBtn(item)"></Button>
                     </StackLayout>
                 </StackLayout>
             </CardView>

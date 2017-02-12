@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, NavigationExtras } from "@angular/router";
 import { EventHandeler } from "../../shared/providers/event-handeler/event-handeler.provider";
 import { Database } from "../../shared/database/database";
 import listViewModule = require("ui/list-view");
@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
   @ViewChild("myProgress") progress: ElementRef;
 
 
-  constructor(private page: Page, private database: Database, private eventHandeler: EventHandeler) {
+  constructor(private page: Page, private database: Database, private router: Router) {
 
   }
 
@@ -53,27 +53,13 @@ export class HomeComponent implements OnInit {
     }
 
 
-    // this.eventList = this.eventHandeler.eventList;
-    // if (this.eventList.length > 0) {
-    //   this.hasEvent = true;
-    // } else {
-    //   this.hasEvent = false;
-    // }
-
   }//end if ngOnInit()
 
   devTest() {
-    let output: string;
-    for (var i in this.eventList) {
-      output += "Event " + i + ": "
-        + "\n Key: " + this.eventList[i].key
-        + "\n Title: " + this.eventList[i].title
-        + "\n Description: " + this.eventList[i].description
-        + "\n priority: " + this.eventList[i].priority
-        + "\n startTime: " + this.eventList[i].startTime
-        + "\n endTime: " + this.eventList[i].endTime;
-      console.log(output);
-    }
+    this.database.reset();
+    this.eventList = [];
+    this.hasEvent = false;
+    alert("data reset");
 
   }
 
@@ -81,30 +67,49 @@ export class HomeComponent implements OnInit {
 
   }
 
-  eventListTap() {
-    alert("Tapped");
+
+  // public onItemTap(args) {
+  //   alert(args);
+  // }
+
+  public eventListTap(args) {
+    alert(args.key);
   }
 
+  public editBtn(args) {
+    let eventData: NavigationExtras = {
+      queryParams: {
+        "key": args.key,
+        "title": args.title,
+        "description": args.description,
+        "priority": args.priority,
+        "startTime": args.startTime,
+        "endTime": args.endTime
+      }
+    };
+
+    this.router.navigate(["/event"], eventData);
+  }
+
+
   devDeleteList() {
-    this.eventHandeler.deleteList();
-    this.eventList = this.eventHandeler.eventList;
-    this.hasEvent = false;
+
   }
 
   devGenerateEvents() {
-    for (let i: number = 0; i < 50; i++) {
-      this.eventHandeler.newEvent(
-        "Event Title: " + (i + 1),
-        "Description: " + i, 3, 5, 6
-      );
-      this.eventList = this.eventHandeler.eventList;
-    }//end of for
-    this.hasEvent = true;
+    // for (let i: number = 0; i < 50; i++) {
+    //   this.eventHandeler.newEvent(
+    //     "Event Title: " + (i + 1),
+    //     "Description: " + i, 3, 5, 6
+    //   );
+    //   this.eventList = this.eventHandeler.eventList;
+    // }//end of for
+    // this.hasEvent = true;
   }
 
 
   provide() {
-    this.eventList = this.eventHandeler.eventList;
+    // this.eventList = this.eventHandeler.eventList;
   }
 
   public update(eventList) {
@@ -122,11 +127,16 @@ export class HomeComponent implements OnInit {
 
   }
 
-  editBtn() {
+  // editBtn(eventData: any) {
+  // alert("WORKING: " + eventData);
+  // }
 
-  }
-
-  extendTimeBtn() {
+  extendTimeBtn(args) {//delete button for now
+    this.database.deleteEvent(args.key);
+    this.eventList = this.database.getEventList();
+    if (this.eventList.length > 0) {
+      this.hasEvent = false;
+    }
 
   }
 

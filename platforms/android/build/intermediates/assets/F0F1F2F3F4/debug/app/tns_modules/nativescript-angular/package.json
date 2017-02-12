@@ -10,7 +10,7 @@
         "spec": "1.2.0",
         "type": "version"
       },
-      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo"
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo"
     ]
   ],
   "_from": "nativescript-angular@1.2.0",
@@ -44,7 +44,7 @@
   "_shasum": "0d5f8a3e1ed10bee414933d735306e2deee07787",
   "_shrinkwrap": null,
   "_spec": "nativescript-angular@1.2.0",
-  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo\\Whattodo",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo",
   "bugs": {
     "url": "http://www.telerik.com"
   },

@@ -6,12 +6,12 @@
 A NativeScript plugin to provide an XML widget to implement the Material Design CardView component.
 
 ##### [Material Design Card Spec](https://www.google.com/design/spec/components/cards.html)
-##### [CardView Android Documentation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html) 
-##### iOS version uses the [MaterialCard](https://cocoapods.org/pods/MaterialCard) pod by [Nathan Walker](https://github.com/NathanWalker)
+##### [CardView Android Documentation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html)
 
 
 ## Installation
-`npm install nativescript-cardview`
+- `tns plugin add nativescript-cardview`
+- *Be sure to run a new build after adding plugins to avoid any issues. Here is a post with some details: https://bradmartin.net/2016/07/20/ahhh-this-nativescript-plugin-doesnt-work/*
   
 ## Vanilla NativeScript
 
@@ -95,6 +95,10 @@ An attribute to set the color of the shadow behind the card.
 
 An attribute to set the opacity of the shadow behind the card.
 
+* **shadowRadius** *optional*
+
+An attribute to set the radius of the shadow (shadow spread) behind the card.
+
 The default values are set to:
 ``` 
 radius = 2;
@@ -102,6 +106,7 @@ shadowOffsetWidth = 0;
 shadowOffsetHeight = 2;
 shadowColor = new Color('#000').ios
 shadowOpacity = 0.4;
+shadowRadius = 1;
 ```
 
 ## Sample Screenshots
@@ -126,9 +131,10 @@ Sample 1 |  Sample 2
 #### Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/6006148?v=3" width="100px;"/><br /><sub>Brad Martin</sub>](https://bradmartin.net/)<br />
-| [<img src="https://avatars2.githubusercontent.com/u/457187?v=3" width="100px;"/><br /><sub>Nathan Walker</sub>](https://github.com/NathanWalker)<br />
-| [<img src="https://avatars0.githubusercontent.com/u/850871?v=3" width="100px;"/><br /><sub>Nathanael Anderson</sub>](https://github.com/NathanaelA)<br /> 
-| [<img src="https://avatars1.githubusercontent.com/u/7893485?v=3" width="100px;"/><br /><sub>Stanimira Vlaeva</sub>](https://github.com/sis0k0)<br /> 
-| [<img src="https://avatars1.githubusercontent.com/u/1426370?v=3" width="100px;"/><br /><sub>Eddy Verbruggen</sub>](https://github.com/EddyVerbruggen)<br /> 
+
+| [<img src="https://avatars1.githubusercontent.com/u/6006148?v=3" width="100px;"/><br /><sub>Brad Martin</sub>](https://bradmartin.net/) | [<img src="https://avatars2.githubusercontent.com/u/457187?v=3" width="100px;"/><br /><sub>Nathan Walker</sub>](https://github.com/NathanWalker)  |  [<img src="https://avatars0.githubusercontent.com/u/850871?v=3" width="100px;"/><br /><sub>Nathanael Anderson</sub>](https://github.com/NathanaelA)   | [<img src="https://avatars1.githubusercontent.com/u/3605066?v=3" width="100px;"/><br /><sub>Nedim Erkocevic</sub>](https://github.com/manijak)   | 
+|---|---|---|---|---|
+| [<img src="https://avatars1.githubusercontent.com/u/1426370?v=3" width="100px;"/><br /><sub>Eddy Verbruggen</sub>](https://github.com/EddyVerbruggen)  |  [<img src="https://avatars1.githubusercontent.com/u/7893485?v=3" width="100px;"/><br /><sub>Stanimira Vlaeva</sub>](https://github.com/sis0k0)  | [<img src="https://avatars2.githubusercontent.com/u/3397077?v=3" width="100px;"/><br /><sub>Vladimir Nani</sub>](https://github.com/vladimirnani)   |    |
+|   |   |   |   |   |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
