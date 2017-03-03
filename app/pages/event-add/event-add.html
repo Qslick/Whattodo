@@ -1,7 +1,7 @@
 <ActionBar class="action-bar" title="Event">
 
-    <NavigationButton [nsRouterLink]="['/home']" pageTransition="fade"></NavigationButton>
-        <ActionItem (tap)="testBtn" android.systemIcon="ic_menu_settings_holo_light" android.position="right">
+    <NavigationButton pageTransition="fade"></NavigationButton>
+    <ActionItem (tap)="testBtn" android.systemIcon="ic_menu_settings_holo_light" android.position="right">
 
     </ActionItem>
 
@@ -11,65 +11,113 @@
 </ActionBar>
 
 <StackLayout>
-    <TabView>
-        <StackLayout *tabItem="{title: 'Detail', iconSource: '~/icon.png'}">
+    <TabView class="tab-view">
+        <StackLayout class="tab-view" *tabItem="{title: 'Detail', iconSource: '~/icon.png'}">
             <StackLayout class="form title_header">
                 <StackLayout class="input-field">
-                    <Label class="title h4" text="Title"></Label>
-                    <TextField class="h2" hint="Enter Name" autoCapitalizationType="true" [(ngModel)]='title'></TextField>
+                    <Label class="font-weight-normal title h4" text="Enter Name"></Label>
+                    <TextField class="label h2" hint="Title" autoCapitalizationType="true" [(ngModel)]='title'></TextField>
                 </StackLayout>
                 <StackLayout class="input-field">
-                    <TextField class="h3" hint="Description" autoCapitalizationType="true" [(ngModel)]='description'></TextField>
+                    <Label class="font-weight-normal title h4" text="Enter Notes"></Label>
+                    <TextField class="label h2" hint="Description" autoCapitalizationType="true" [(ngModel)]='description'></TextField>
                 </StackLayout>
             </StackLayout>
-            <StackLayout orientation="horizontal">
-                <Button class="btn btn-primary btn-rounded-sm priority priority_left" text="!" (tap)="priority1()"></Button>
-                <Button class="btn btn-primary btn-rounded-sm priority" text="!!" (tap)="priority2()"></Button>
-                <Button class="btn btn-primary btn-rounded-sm priority priority_right" text="!!!" (tap)="priority3()"></Button>
+            <StackLayout class="centered radio_btn_group">
+
+                <StackLayout orientation="horizontal">
+                    <RadioGroup [(value)]="priority" orientation="horizontal">
+                        <RadioButton class="radio_btn" (tap)="priority1()"></RadioButton>
+                        <RadioButton class="radio_btn" (tap)="priority2()"></RadioButton>
+                        <RadioButton class="radio_btn" (tap)="priority3()"></RadioButton>
+                    </RadioGroup>
+                </StackLayout>
+                <StackLayout orientation="horizontal">
+                    <Label class="radio_btn_text" text="Whenever" textWrap="true"></Label>
+                    <Label class="radio_btn_text" text="Important" textWrap="true"></Label>
+                    <Label class="radio_btn_text" text="Urgent" textWrap="true"></Label>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
         <StackLayout *tabItem="{title: 'Time'}">
             <StackLayout>
-
-                <TimePicker [(ngModel)]="time"></TimePicker>
-
-                <StackLayout class="form">
-                    <StackLayout orientation="horizontal">
-                        <Label text="Start Time"></Label>
-                        <Button class="time_btn" text="{{timeStart}}" (tap)="startTimeBtn()"></Button>
-                    </StackLayout>
-
-                    <StackLayout orientation="horizontal">
-                        <Label text="End Time  "></Label>
-                        <Button class="time_btn" text="{{timeEnd}}" (tap)="endTimeBtn()"></Button>
-                    </StackLayout>
-
-                    <StackLayout orientation="horizontal">
-
-                        <StackLayout>
-                        <CheckBox [checked]="mondayCheck" text="Monday" [fillColor]="myCheckColor" (tap)="monday()" ></CheckBox>
-                        <CheckBox [checked]="tuesdayCheck" text="Tuesday" [fillColor]="myCheckColor" (tap)="tuesday()" ></CheckBox>
-                        <CheckBox [checked]="wednesdayCheck" text="Wednesday" [fillColor]="myCheckColor" (tap)="wednesday()" ></CheckBox>
-                        </StackLayout>
-
-                        <StackLayout>
-                        <CheckBox [checked]="thursdayCheck" text="Thursday" [fillColor]="myCheckColor" (tap)="thursday()" ></CheckBox>
-                        <CheckBox [checked]="fridayCheck" text="Friday" fillColor="{{ myCheckColor }}" (tap)="friday()" ></CheckBox>
-                        <CheckBox [checked]="saturdayCheck" text="Saturday" fillColor="{{ myCheckColor }}" (tap)="saturday()" ></CheckBox>
-                        <CheckBox [checked]="sundayCheck" text="Sunday" fillColor="{{ myCheckColor }}" (tap)="sunday()" ></CheckBox>
-                    </StackLayout>
-
-                    </StackLayout>
-
+                <StackLayout>
+                    <Label class="centered spacing_top time_duration" text="Total Duration"></Label>
                 </StackLayout>
 
+                <StackLayout>
+                    <Label class="centered time_duration h1" text={{timeDuration}}></Label>
+                </StackLayout>
+
+                <!--Start Time-->
+                <StackLayout class="spacing_top spacing_bottom" orientation="horizontal">
+                    <Label class="h3 spacing_left fa icon" [text]="'fa-clock-o' | fonticon"></Label>
+                    <Label class="h3 spacing_left spacing_right" text="Start Time" textWrap="true"></Label>
+                    <Label class="h3 centered times" text={{startTimeStr}} (tap)="initalTime()" textWrap="true"></Label>
+                </StackLayout>
+
+                <!--End Time-->
+                <StackLayout class="spacing_bottom" orientation="horizontal">
+                    <Label class="h3 spacing_left fa icon" [text]="'fa-clock-o' | fonticon"></Label>
+                    <Label class="h3 spacing_left spacing_right" text="End Time" textWrap="true"></Label>
+                    <Label class="h3 times" text={{endTimeStr}} (tap)="finalTime()" textWrap="true"></Label>
+                </StackLayout>
+
+                <StackLayout class="spacing_top spacing_bottom" orientation="horizontal">
+                    <Label class="h4 spacing_left fa icon" [text]="'fa-calendar' | fonticon"></Label>
+                    <Label class="h4" text="Days" textWrap="true"></Label>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text=""  (tap)="monday()"></CheckBox>
+                        <Label class="day_checkbox" text="Mon" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text=""  (tap)="tuesday()"></CheckBox>
+                        <Label class="day_checkbox" text="Tue" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text="" (tap)="wednesday()"></CheckBox>
+                        <Label class="day_checkbox" text="Wed" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text=""  (tap)="thursday()"></CheckBox>
+                        <Label class="day_checkbox" text="Thur" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text=""  (tap)="friday()"></CheckBox>
+                        <Label class="day_checkbox" text="Fri" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text=""  (tap)="saturday()"></CheckBox>
+                        <Label class="day_checkbox" text="Sat" textWrap="true"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <CheckBox class="day_checkbox" #CB1 text="" (tap)="sunday()"></CheckBox>
+                        <Label class="day_checkbox" text="Sun" textWrap="true"></Label>
+                    </StackLayout>
+                </StackLayout>
+
+                <ScrollView id="scroll" #scroll  orientation="horizontal">
+                    <StackLayout  style="margin-top: 40px;" orientation="horizontal">
+                        
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #F33D5C;" [text]="'fa-book' | fonticon" (tap)="icon1(0)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #89F47B;" [text]="'fa-flask' | fonticon" (tap)="icon1(1)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #C0441D;" [text]="'fa-cutlery' | fonticon" (tap)="icon1(2)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #69C01D;" [text]="'fa-calendar' | fonticon" (tap)="icon1(3)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #9C50C8;" [text]="'fa-mobile' | fonticon" (tap)="icon1(4)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #0C98F3;" [text]="'fa-laptop' | fonticon" (tap)="icon1(5)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #C05500;" [text]="'fa-television' | fonticon" (tap)="icon1(6)"></Button>
+                        <Button class="icon_btn fa icon btn-primary " style="color: #ffffff; background-color: #00F38D;" [text]="'fa-users' | fonticon" (tap)="icon1(7)"></Button>
+                                   </StackLayout>
+
+                </ScrollView>
             </StackLayout>
         </StackLayout>
-
     </TabView>
-
 </StackLayout>
 
 <StackLayout>
-    <Button class="btn btn-primary btn_finish" text="Done" (tap)="doneBtn()"></Button>
+    <StackLayout orientation="horizontal">
+        <Button class="btn btn-primary btn_cancel" text="Cancel" (tap)="cancelBtn()"></Button>
+        <Button class="btn btn-primary btn_finish" text="Finish" (tap)="doneBtn()"></Button>
+    </StackLayout>
 </StackLayout>

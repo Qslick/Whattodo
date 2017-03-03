@@ -1,17 +1,71 @@
-ActionBar {
-}
+@import "../../whattodo-custom-theme.css";
+
 
 .title {
-    margin-top: 40px
+    margin-top: 20px;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.day_checkbox {
+    text-align: center;
+}
+
+.radio_btn_group{
+        margin-top: 50px;
+}
+
+.radio_btn {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.radio_btn_text {
+    margin-left: 27 px;
+    margin-right: 27px;
+    text-align: center;
+}
+
+.times {
+    margin-left: 15px;
 }
 
 .time_btn {
     margin-left: 90px;
     padding-right: 20px;
     border-radius: 20;
-    /*background-color: lightblue;*/
-    color: yellowgreen;
+}
 
+.centered {
+text-align: center;
+align-content: center;
+}
+
+.spacing_top {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.spacing_bottom {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.spacing_left {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.spacing_right{
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.time_duration {
+color: black;
 }
 
 .priority_left {
@@ -27,8 +81,17 @@ ActionBar {
     margin-left: 20;
 }
 
+.btn{
+        margin-top: 85%;
+}
+
 .btn_finish {
-    margin-top: 80%;
+    margin-left: 5;
+}
+
+.btn_cancel{
+    margin-right: 5;
+    margin-left: 40%;
 }
 
 .doneBtn {
@@ -37,9 +100,29 @@ ActionBar {
 
 .day_btn {
     width: 50;
-    background-color: #FF1981;
+    /*background-color: #FF1981;*/
     border-radius: 50;
     margin-top: 40px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.scroll-menu {
+    height: 220;
+    padding: 10;
+}
+ 
+/*.scroll-pane {
+    background-color: #FF4081;
+    width: 240;
+    height: 220;
+    margin: 10;
+}*/
+
+.icon_btn{
+  border-radius: 100;
+  width: 50;
+  height: 50;
+  font-size: 30;
+
 }

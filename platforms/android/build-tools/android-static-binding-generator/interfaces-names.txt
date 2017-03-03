@@ -1369,6 +1369,13 @@ android.support.transition.VisibilityImpl
 android.support.transition.VisibilityInterface
 com.natasa.progressviews.utils.ProgressShape
 com.natasa.progressviews.utils.OnProgressViewListener
+com.android.datetimepicker.Callback
+com.android.datetimepicker.date.DatePickerController
+com.android.datetimepicker.date.DatePickerDialog.OnDateChangedListener
+com.android.datetimepicker.date.DatePickerDialog.OnDateSetListener
+com.android.datetimepicker.date.MonthView.OnDayClickListener
+com.android.datetimepicker.time.RadialPickerLayout.OnValueSelectedListener
+com.android.datetimepicker.time.TimePickerDialog.OnTimeSetListener
 com.tns.Debugger
 com.tns.ExtractPolicy
 com.tns.FileExtractor

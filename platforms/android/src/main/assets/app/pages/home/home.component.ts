@@ -13,8 +13,9 @@ import { Couchbase } from "nativescript-couchbase";
 import { registerElement, ViewClass } from "nativescript-angular/element-registry";
 registerElement("CardView", () => require("nativescript-cardview").CardView);
 registerElement("LineProgressBar", () => require("nativescript-progressbar").LineProgressBar);
-registerElement("fab", () => require("nativescript-floatingactionbutton").Fab);
+registerElement("pb:CircleProgressBar", () => require("nativescript-progressbar").LineProgressBar);
 
+registerElement("fab", () => require("nativescript-floatingactionbutton").Fab);
 
 @Component({
   selector: 'my-app',
@@ -35,6 +36,9 @@ export class HomeComponent implements OnInit {
   databaseName = "testdb";
   databaseOutput;
 
+  startTimeDayCycle: string;
+  endTimeDayCycle: string;
+
   @ViewChild("myProgress") progress: ElementRef;
 
 
@@ -42,8 +46,11 @@ export class HomeComponent implements OnInit {
 
   }
 
-
   ngOnInit() {
+
+    this.startTimeDayCycle = "pm";
+    this.endTimeDayCycle = "pm";
+
 
     this.eventList = this.database.getEventList();
     if (this.eventList.length > 0) {
@@ -51,7 +58,6 @@ export class HomeComponent implements OnInit {
     } else {
       this.hasEvent = false;
     }
-
 
   }//end if ngOnInit()
 
@@ -89,6 +95,10 @@ export class HomeComponent implements OnInit {
     };
 
     this.router.navigate(["/event"], eventData);
+  }
+
+  public timeConvert(time: number) {
+
   }
 
 
@@ -139,7 +149,5 @@ export class HomeComponent implements OnInit {
     }
 
   }
-
-
 
 }//end of class

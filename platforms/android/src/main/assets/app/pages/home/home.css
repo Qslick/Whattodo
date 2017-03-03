@@ -1,7 +1,14 @@
+@import "../../whattodo-custom-theme.css";
+
+
 label {
     /*vertical-align: center;*/
     text-align: center;
     /*color: white;*/
+}
+
+.action {
+    background-color: white;
 }
 
 .container-SL {
@@ -10,8 +17,27 @@ label {
     background-color: #e4e4e4;
 }
 
+.card{
+    mardin: 15%;
+}
 
-.card-label {
+.margin_left{
+    margin-left:15px; 
+}
+
+.margin_right{
+    margin-right:15px;
+}
+
+.margin_top{
+    margin-top: 15px;
+}
+
+.margin_bottom{
+    margin-bottom: 15px;
+}
+
+.card_label {
     margin-top: 15px;
     margin-left: 15px;
 }
@@ -48,7 +74,7 @@ color: red;
 .fab-button {
     height: 70;
     margin: 15;
-    background-color: #FF9105; 
+    background-color: #0cebc7; 
     horizontal-align: right; 
     vertical-align: bottom; 
 }

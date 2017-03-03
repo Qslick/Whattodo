@@ -84,19 +84,22 @@ export class Database {
         console.log("DB RESET");
     }
 
-    public editEvent(key: string, title: string, description: string, priority: number, startTime: number, endTime: number) {
+    public editEvent(key: string, title: string, description: string, priority: number, startTime: Date, endTime: Date, icon:number) {
         this.eventDatabase.updateDocument(key, {
             key: key,
             title: title,
             description: description,
             priority: priority,
-            startTime: startTime,
-            endTime: endTime
+           startTimeHour: startTime.getHours(),
+            startTimeMinute: startTime.getMinutes(),
+            endTimeHour: endTime.getHours(),
+            endTimeMinute: endTime.getMinutes(),
+            icon: icon
         });
         this.updateList();
     }
 
-    public newEvent(title: string, description: string, priority: number, startTime: number, endTime: number) {
+    public newEvent(title: string, description: string, priority: number, startTime: Date, endTime: Date, icon: number) {
 
         let numOfEvents = this.lookupDatabase.getDocument(this.lookupDocumentKey).index;
         numOfEvents = Number(numOfEvents);
@@ -108,13 +111,19 @@ export class Database {
         numOfEvents += 1;
         numOfEvents = String(numOfEvents);
 
+        // let startTimeStr = startTime.getHours() + "." + startTime.getMinutes();
+        // let endTimeStr = endTime.getHours() + "." + endTime.getMinutes();
+
         let event = { //createing event and storeing it's key inside
             key: numOfEvents,
             title: title,
             description: description,
             priority: priority,
-            startTime: startTime,
-            endTime: endTime
+            startTimeHour: startTime.getHours(),
+            startTimeMinute: startTime.getMinutes(),
+            endTimeHour: endTime.getHours(),
+            endTimeMinute: endTime.getMinutes(),
+            icon: icon
         };
 
         this.eventDatabase.createDocument(event, numOfEvents);

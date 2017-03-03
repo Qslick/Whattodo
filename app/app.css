@@ -9,8 +9,12 @@ For example, the following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
 @import 'nativescript-theme-core/css/core.light.css';
-@import "./whattodo-theme.css";
+@import "./whattodo-custom-theme.css";
 
+
+.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+}
 
 .btn {
     font-size: 18;

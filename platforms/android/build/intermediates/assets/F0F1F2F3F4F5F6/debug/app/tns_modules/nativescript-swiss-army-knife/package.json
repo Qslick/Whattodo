@@ -1,0 +1,139 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-swiss-army-knife",
+        "scope": null,
+        "escapedName": "nativescript-swiss-army-knife",
+        "name": "nativescript-swiss-army-knife",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo"
+    ]
+  ],
+  "_from": "nativescript-swiss-army-knife@latest",
+  "_id": "nativescript-swiss-army-knife@1.0.71",
+  "_inCache": true,
+  "_location": "/nativescript-swiss-army-knife",
+  "_nodeVersion": "6.3.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-swiss-army-knife-1.0.71.tgz_1473975706227_0.6596000527497381"
+  },
+  "_npmUser": {
+    "name": "bradmartin",
+    "email": "bradmartin0905@gmail.com"
+  },
+  "_npmVersion": "3.10.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-swiss-army-knife",
+    "scope": null,
+    "escapedName": "nativescript-swiss-army-knife",
+    "name": "nativescript-swiss-army-knife",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-swiss-army-knife/-/nativescript-swiss-army-knife-1.0.71.tgz",
+  "_shasum": "63e99e28c4d278fd9f96083a15e5bdb46320f844",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-swiss-army-knife",
+  "_where": "C:\\Users\\Quinn\\Documents\\Development\\Whattodo2\\Whattodo",
+  "author": {
+    "name": "Josh Sommer",
+    "email": "joshdsommer@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/TheOriginalJosh/nativescript-swiss-army-knife/issues"
+  },
+  "contributors": [
+    {
+      "name": "Brad Martin",
+      "email": "bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    },
+    {
+      "name": "Nathan Walker",
+      "email": "walkerrunpdx@gmail.com",
+      "url": "https://github.com/NathanWalker"
+    }
+  ],
+  "dependencies": {},
+  "description": "Nativescript Swiss Army Knife",
+  "devDependencies": {
+    "tns-platform-declarations": "^2.0.0",
+    "typescript": "^1.8.10"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "63e99e28c4d278fd9f96083a15e5bdb46320f844",
+    "tarball": "https://registry.npmjs.org/nativescript-swiss-army-knife/-/nativescript-swiss-army-knife-1.0.71.tgz"
+  },
+  "gitHead": "2f77ea3519ec8d78c2414e93de31bbc441e2ca63",
+  "homepage": "https://github.com/TheOriginalJosh/nativescript-swiss-army-knife",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "TypeScript",
+    "joshsommer",
+    "bradmartin",
+    "swiss army",
+    "utilities"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/TheOriginalJosh/nativescript-swiss-army-knife/blob/master/LICENSE"
+  },
+  "main": "nativescript-swiss-army-knife.js",
+  "maintainers": [
+    {
+      "name": "bradmartin",
+      "email": "bradmartin0905@gmail.com"
+    },
+    {
+      "name": "joshdsommer",
+      "email": "joshdsommer@gmail.com"
+    },
+    {
+      "name": "walkerrunpdx",
+      "email": "walkerrunpdx@gmail.com"
+    }
+  ],
+  "name": "nativescript-swiss-army-knife",
+  "nativescript": {
+    "platforms": {
+      "android": "2.0.0",
+      "ios": "2.0.0"
+    },
+    "tns-ios": {
+      "version": "2.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheOriginalJosh/nativescript-swiss-army-knife.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "ios": "xcproj --project platforms/ios/YourApp.xcodeproj touch; xcproj --project platforms/ios/Pods/Pods.xcodeproj touch; tns livesync ios --emulator --watch",
+    "livesync.android": "npm run preparedemo && cd demo && tns livesync android --watch",
+    "livesync.ios": "npm run preparedemo && cd demo && tns livesync ios --watch",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-swiss-army-knife && tns plugin add .. && tns install",
+    "setup": "npm install && cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "typings": "nativescript-swiss-army-knife.d.ts",
+  "version": "1.0.71"
+}
